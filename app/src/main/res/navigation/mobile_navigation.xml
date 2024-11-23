@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login_activity">
+
+
+    <activity
+        android:id="@+id/login_activity"
+        android:name="com.jedp.entryeventapp.Login_activity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/compras"
+        android:name="com.jedp.entryeventapp.Compras"
+        android:label="activity_compras"
+        tools:layout="@layout/activity_compras" />
+    <activity
+        android:id="@+id/detallesEventos"
+        android:name="com.jedp.entryeventapp.DetallesEventos"
+        android:label="activity_detalles_eventos"
+        tools:layout="@layout/activity_detalles_eventos" />
+    <activity
+        android:id="@+id/register_activity"
+        android:name="com.jedp.entryeventapp.Register_activity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/menu_activity"
+        android:name="com.jedp.entryeventapp.Menu_activity"
+        android:label="activity_menu"
+        tools:layout="@layout/activity_menu" />
+    <activity
+        android:id="@+id/forgetPass_activity"
+        android:name="com.jedp.entryeventapp.ForgetPass_activity"
+        android:label="activity_pass1"
+        tools:layout="@layout/activity_pass1" />
+
+</navigation>

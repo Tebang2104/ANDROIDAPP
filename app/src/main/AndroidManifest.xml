@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_home_black_24dp"
+        android:theme="@style/Theme.TipTime">
+        <activity
+            android:name=".MisEventos_activity2"
+            android:exported="false" />
+        <activity
+            android:name=".MisDetalles_eventos2"
+            android:exported="false" />
+        <activity
+            android:name=".MisDetalles_eventos"
+            android:exported="false" />
+        <activity
+            android:name=".MisEventos_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Menu_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Compras"
+            android:exported="false" />
+        <activity
+            android:name=".DetallesEventos"
+            android:exported="false" />
+        <activity
+            android:name=".Register_activity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgetPass_activity"
+            android:exported="true" />
+        <activity
+            android:name=".Login_activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

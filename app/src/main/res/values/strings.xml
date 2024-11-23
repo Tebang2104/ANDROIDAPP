@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- frame_1 strings -->
+
+    <string name="app_name">Entry Event App</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="txt_pass">Contraseña</string>
+    <string name="aviso_1">INICIAR SESIÓN</string>
+    <string name="aviso_2">Construye tus mejores recuerdos</string>
+    <string name="aviso_3">Puedes seleccionar el evento de tu gusto, en tus propios tiempos </string>
+    <string name="aviso_4">No tienes una cuenta?</string>
+    <string name="registro"><u>Registrate</u></string>
+    <string name="txt_user">Usuario o número de télefono</string>
+    <string name="btn_ingreso">Ingresar</string>
+    <string name="olvido"><u>Olvidaste la contraseña</u></string>
+
+    <!-- activity_register strings -->
+    <string name="aviso_registro">REGISTRO</string>
+    <string name="intro_registro">Que esperas para vivir experiencias inolvidables</string>
+    <string name="aviso_registro2">Puedes seleccionar el evento de tu gusto, en tus propios tiempos</string>
+    <string name="aviso_registro3">¿Ya tienes una cuenta?</string>
+    <string name="txt_email">Correo</string>
+    <string name="txt_Newuser">Usuario</string>
+    <string name="txt_Newtel">Número de télefono</string>
+    <string name="txt_Newpass">Contraseña</string>
+    <string name="txt_Newpassc">Repetir Contraseña</string>
+    <string name="login"><u>Inicia Sesión</u></string>
+    <string name="btn_registro">Registrarse</string>
+
+
+    <!-- activity_pass1 strings -->
+    <string name="aviso_5">OLVIDÓ CONTRASEÑA</string>
+    <string name="aviso_6">Recuerda bien tus datos personales</string>
+    <string name="aviso_7">Sigue los pasos al pie de la letra para asi poder restaurar tu contraseña</string>
+    <string name="aviso_8">1.Ingresa tu correo electronico, recibiras un correo con un link para el cambio de contraseña</string>
+    <string name="txt_userfp">Usuario</string>
+    <string name="btn_cambpass">Cambiar Contraseña</string>
+
+
+    <!-- Eventos -->
+    <string name="menu_eventos">Portal de eventos</string>
+    <string name="eventos">Eventos</string>
+    <string name="menu_misEventos">Detalles de mis eventos</string>
+    <string name="misEventos">Mis eventos</string>
+    <string name="menu_Compras">Compras pendientes</string>
+    <string name="compras">Compras</string>
+    <string name="menu_Config">Configuración de usuario</string>
+    <string name="config">Configuración</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Validation Messages -->
+    <string name="invalid_mail">Ingrese mail valido</string>
+    <string name="invalid_password">Ingrese un password que cumpla con los parametros</string>
+    <string name="invalid_password_conf">Las contraseñas no coinciden</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--Fragmentos -->
+    <string name="Bienvenida">Bienvenidos a EntryEventsApp</string>
+    <string name="filtro_1">Todos</string>
+    <string name="filtro_2">Teatros</string>
+    <string name="filtro_3">Fiestas</string>
+    <string name="filtro_4">Galerias</string>
+
+
+</resources>

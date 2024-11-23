@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    tools:context=".Menu_activity">
+
+    <ImageButton
+        android:id="@+id/btn_salir"
+        android:layout_width="47dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_11_shape"
+        android:contentDescription="@string/ek_img_content"
+        android:onClick="salir"
+        android:rotationY="-180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_1" />
+
+    <ImageView
+        android:id="@+id/btnMisEventos"
+        android:layout_width="49dp"
+        android:layout_height="31dp"
+        android:onClick="irMisEventos"
+        android:src="@android:drawable/ic_dialog_dialer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_salir"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="388dp"
+        android:layout_height="513dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rectangle_16_ek3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="386dp"
+        android:layout_height="39dp"
+        android:background="@drawable/_bg__framepantallalogin_shape"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_eventos"
+        app:layout_constraintVertical_bias="0.055">
+
+        <Button
+            android:id="@+id/btn_filtro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_2_shape"
+            android:text="@string/filtro_1"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_filtro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_2_shape"
+            android:text="@string/filtro_2"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_filtro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_2_shape"
+            android:text="@string/filtro_3"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_filtro4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_2_shape"
+            android:text="@string/filtro_4"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_eventos"
+        android:layout_width="162dp"
+        android:layout_height="56dp"
+        android:textColor="@color/white"
+        android:text="@string/Bienvenida"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryVariant"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="73dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/hecho_1"/>
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/eventos"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_detalles2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@color/colorPrimaryVariant"
+                    android:onClick="irMisEventos2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/boton_de_informacion_2" />
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/eventos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@color/colorPrimaryVariant"
+                    android:onClick="irCompras"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/carrito_de_compras_1" />
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/compras" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- frame_1 styles -->
+
+	<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+		<item name="colorPrimary">@color/_bg__frame_1_ek2_color</item>
+		<item name="colorPrimaryDark">@color/bottom_activate</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="Buttons1" parent="Theme.MaterialComponents.Light.DarkActionBar">
+		<item name="colorPrimary">@color/rectangle_4_color</item>
+	</style>
+	<style name="Buttons2" parent="Theme.MaterialComponents.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+	</style>
+	<style name="Buttons_Back" parent="Theme.MaterialComponents.Light.DarkActionBar">
+		<item name="colorPrimary">@color/rectangle_4_color</item>
+	</style>
+	<style name="navBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+		<item name="colorPrimary">@color/rectangle_4_color</item>
+	</style>
+
+</resources>

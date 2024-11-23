@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011089904755",
+    "project_id": "entryeventapp",
+    "storage_bucket": "entryeventapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011089904755:android:299ed84fa5f56ce1fb0606",
+        "android_client_info": {
+          "package_name": "com.jedp.entryeventapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmoSj_eDV5qZyw6-RBqKaMcijDG0YTA1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

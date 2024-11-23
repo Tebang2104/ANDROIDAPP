@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisDetalles_eventos"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/img_evt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/megaland"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.037"  />
+
+    <ImageView
+        android:id="@+id/btnMisEventos2"
+        android:layout_width="49dp"
+        android:layout_height="31dp"
+        android:onClick="irDetalleEventos"
+        android:src="@android:drawable/ic_dialog_dialer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:background="@drawable/card_yellow_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764">
+
+
+        <ImageButton
+            android:id="@+id/btn_salir2"
+            android:layout_width="47dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rectangle_11_shape"
+            android:contentDescription="@string/ek_img_content"
+            android:onClick="irMisEventos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_1" />
+
+        <TextView
+            android:id="@+id/txt_lugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Parque Simón Bolivar, Bogotá D.C."
+            android:textColor="#C1C1C1"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_salir2"
+            app:layout_constraintVertical_bias="0.324" />
+
+        <TextView
+            android:id="@+id/txt_descripcion1"
+            style="@style/textStyle"
+            android:layout_width="355dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Uno de los mejores conciertos de musica urbana con artistas de talla mundia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lugar" />
+
+        <TextView
+            android:id="@+id/txt_usuarioId"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="JdWiEDvMWMfWPoIyThewFYhFgJ63"
+            app:layout_constraintBottom_toTopOf="@+id/codigoQR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="jduitamap@ucentra.edu.co"
+            app:layout_constraintBottom_toTopOf="@+id/codigoQR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion1"
+            app:layout_constraintVertical_bias="0.151" />
+
+        <ImageView
+            android:id="@+id/codigoQR"
+            android:layout_width="354dp"
+            android:layout_height="185dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/qrnavidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcion1"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryVariant">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="@color/colorPrimaryVariant"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="73dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/hecho_1" />
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/eventos"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@color/colorPrimary"
+                    android:onClick="irMisEventos"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/boton_de_informacion_2" />
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/eventos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@color/colorPrimaryVariant"
+                    android:onClick="irCompras"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/carrito_de_compras_1" />
+
+                    <TextView
+                        style="@style/textStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/compras" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

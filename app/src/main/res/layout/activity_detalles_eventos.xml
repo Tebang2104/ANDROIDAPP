@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_bg__framepantallalogin_color"
+    tools:context=".DetallesEventos">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="390dp"
+        android:layout_height="711dp"
+        android:background="@drawable/card_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="420dp">
+
+                <ImageButton
+                    android:id="@+id/btn_volver3"
+                    android:layout_width="47dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/rectangle_11_shape"
+                    android:contentDescription="@string/ek_img_content"
+                    android:onClick="volver"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.043"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.043"
+                    app:srcCompat="@drawable/arrow_1" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="290dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/grey_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_volver3" />
+
+                <ImageView
+                    android:id="@+id/itemImg"
+                    android:layout_width="0dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/megaland"
+                    app:layout_constraintBottom_toBottomOf="@+id/view2"
+                    app:layout_constraintEnd_toEndOf="@+id/view2"
+                    app:layout_constraintStart_toStartOf="@+id/view2"
+                    app:layout_constraintTop_toTopOf="@+id/view2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                    <TextView
+                        android:id="@+id/txt_nombre_evt"
+                        android:layout_width="311dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tittle"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_precio"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="$10"
+                        android:textColor="@color/white"
+                        android:textSize="21dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/txt_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Uno de los mejores conciertos de musica urbana con artistas de talla mundial"
+                android:textColor="#C1C1C1"
+                android:textSize="16dp"
+                tools:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/txt_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="25 de Octubre del 2023"
+                android:textColor="#C1C1C1"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txt_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Parque Simón Bolivar, Bogotá D.C."
+                android:textColor="#C1C1C1"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_comprar"
+                style="@style/Buttons2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Añadir al carro"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

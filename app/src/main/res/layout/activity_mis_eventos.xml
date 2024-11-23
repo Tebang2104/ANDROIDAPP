@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    tools:context=".MisEventos_activity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_volver3"
+                android:layout_width="49dp"
+                android:layout_height="43dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/rectangle_11_shape"
+                android:contentDescription="@string/ek_img_content"
+                android:onClick="irEventos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.043"
+                app:srcCompat="@drawable/arrow_1" />
+
+            <TextView
+                style="@style/tittleStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="@string/menu_misEventos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.125" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/img_evento"
+            android:layout_width="409dp"
+            android:layout_height="143dp"
+            android:onClick="irDetalleEventos"
+            android:src="@drawable/megaland" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_misEvt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
